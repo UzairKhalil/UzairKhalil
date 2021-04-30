@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <style>
+        body {
+        background-color: #F4F6F8;
+        font-family: Arial;
+        }
+        .container-fuid{
+        margin: 5px 50px 0px 50px;
+        
+        }
+        .cat_name{
+        margin: 5px 0px 10px 0px;
+        font-size: 27px;
+        font-weight: bold;
+        }
+        .main_search_div{
+        margin: 5px 0px 10px 0px;
+        border: 1px solid rgba(71, 67, 67, 0.616);
+        border-top: 3px solid #1D4354;
+        border-radius: 4px;
+        
+        }
+        #main_search{
+        width:90%;
+        font-size: 20px;
+        font-weight: bolder;
+        opacity: 0.8;
+        }
+        .search_by{
+        font-size: large;
+        font-weight: bold;
+        margin:10px 0px 20px 0px;
+        }
+        select{
+        width: 160px;
+        height: 31px;
+        border: 1px solid rgba(71, 67, 67, 0.616);
+        border-radius: 3px;
+        }
+        .details{
+        padding: 0;
+        margin-left: -30px;
+        }
+        .labor_name{
+        font-size: 25px;
+        font-weight:800;
+        }
+        .labor_level{
+        font-size: 20px;
+        margin: -19px 0px 0px 0px;
+        opacity: 0.5;
+        font-weight: 700;
+        }
+        .labor_experience{
+        font-size: 22px;
+        font-weight: 700;
+        }
+        .employee{
+        padding: 0px;
+        margin:0px 0px 20px 0px;
+        border: 1px solid rgba(71, 67, 67, 0.616);
+        border-radius:4px;
+        }
+        .profile_div{
+        margin-left: 25px;
+        }
+        #profile_pic{
+        width: 90px;
+        }
+        .rating{
+        display: flex;
+        margin: 15px 0px 0px 25px;
+        }
+        .stars{
+        padding:0px 8px 0px 10px;
+        }
+        #star{
+        width: 21px;
+        }
+        .rating_points{
+        font-size: 19px;
+        font-weight: bold;
+        color: #FF4081;
+        }
+        .starting_price{
+        font-size: 22px;
+        font-weight: bold;
+        }
+        hr{
+        width:100%;
+        border: 1px solid rgba(71, 67, 67, 0.616);
+        }
+        </style>
+        <title>Category</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+            </div>
+            <div class="upper">
+                <div class="row">
+                    <div class="col">
+                        <div class="cat_name">
+                            Electrician
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="main_search_div">
+                            <div class="input-group rounded">
+                                <input type="search" id="main_search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                                aria-describedby="search-addon" />
+                                <span class="input-group-text border-0" id="search-addon">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="search_by">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="day">
+                                <div class="row">
+                                    <div class="col-sm-2"><div class="label_day">Day</div></div>
+                                    <div class="col-sm-10"><div class="search_day">
+                                        <select class="search_by_box" name="" id="">
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                        </select></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="price">
+                                <div class="row">
+                                    <div class="col-sm-2"><div class="label_price">Price</div></div>
+                                    <div class="col-sm-10"><div class="search_price">
+                                        <select class="search_by_box" name="" id="">
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                        </select></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="time">
+                                <div class="row">
+                                    <div class="col-sm-2"><div class="label_time">Time</div></div>
+                                    <div class="col-sm-10"><div class="search_time">
+                                        <select class="search_by_box" name="" id="">
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                        </select></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="location">
+                                <div class="row">
+                                    <div class="col-sm-4"><div class="label_loc">Location</div></div>
+                                    <div class="col-sm-8"><div class="search_loc">
+                                        <select class="search_by_box" name="" id="">
+                                            <option value=""></option>
+                                            <option value=""></option></select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="employee">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <div class="profile_div">
+                                    <img id="profile_pic" src="profile-user.png" alt="image">
+                                </div>
+                            </div>
+                            <div class="col-sm-10">
+                                <div class="details">
+                                    <p class="labor_name">Uzair Khan</p>
+                                    <p class="labor_level">Level 1</p>
+                                    <p class="labor_experience">I have 2 years of experience.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="rating">
+                            <div class="stars "> <img id="star" src="star-256.png" alt="star_icon"> </div>
+                            <div class="rating_points">4.5</div>
+                        </div>
+                        <hr>
+                        <div align="right" class="starting_price">Starting At Rs.1000</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+            </div>
+        </div>
+    </body>
+</html>
